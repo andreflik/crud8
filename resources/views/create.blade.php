@@ -7,15 +7,17 @@
     <title>Cadastrar novo Produto</title>
 </head>
 <body>
-    <form action="">
-        <label for="">Nome</label>
-        <input type="text" name="nome">
-        <label for="">Custo</label>
-        <input type="text" name="custo">
-        <label for="">Preço</label>
-        <input type="text" name="preco">
-        <label for="">Quantidade</label>
-        <input type="text" name="quantidade">
+    <form action="{{route('registrar_produto')}}" method="POST">
+        
+        <label for="">Nome</label> </br>
+        <input type="text" name="nome"> </br>
+        <label for="">Custo</label> </br>
+        <input type="text" name="custo"> </br>
+        <label for="">Preço</label> </br>
+        <input type="text" name="preco"> </br>
+        <label for="">Quantidade</label> </br>
+        <input type="text" name="quantidade"> </br>
+        <button>Salvar</button>
     </form>
 </body>
 </html>
